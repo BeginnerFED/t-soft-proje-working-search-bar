@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap 5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!--css-->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>T-Soft</title>
+  <link rel="shortcut icon" href="https://www.tsoft.com.tr/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+  <!--Navbar-->
+
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom p-4">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-2">
+            <li class="nav-item">
+              <a class="nav-link active ps-3 pe-3" aria-current="page" href="#">Free designs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">License</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contributors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a href="#" class="me-2">Log in</a>
+            <a href="#" class="sign-in px-4 py-3">Sign Up</a>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- navbar end-->
+
+
+  <!-- search bar -->
+  <section class="search">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 text-center pt-5">
+          <h1>Free UI resources for everyone</h1>
+          <h6 class="pt-3 mx-auto">The largest database of 100% free UI components and designs available in the formats
+            popular by UI designers.</h6>
+        </div>
+
+        <div class="search-bar d-flex flex-row align-items-center mx-auto mt-4">
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Free Design
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Web Design</a></li>
+              <li><a class="dropdown-item" href="#">UI Kit</a></li>
+              <li><a class="dropdown-item" href="#">Coded</a></li>
+            </ul>
+          </div>
+
+          <nav class="navbar navbar-light py-0 border-start">
+            <div class="container-fluid position-relative">
+              <form class="d-flex">
+                <i class="fa fa-search position-absolute d-flex align-items-center"></i>
+                <input class="form-control me-2" type="text" placeholder="İsme Göre Arayın" aria-label="Search" id="search-input">
+              </form>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- search bar end-->
+
+  <!-- filter sec -->
+  <section class="py-4 filter-sec">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 d-flex align-items-center py-2">
+          <div class="switch-button ">
+            <input class="switch-button-checkbox" type="checkbox"></input>
+            <label class="switch-button-label"><span class="switch-button-label-span">Latest</span></label>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex align-items-center py-2">
+          <ul class="nav filter-btns">
+            <li class="nav-item">
+              <button class="btn nav-link active filter-btn" aria-current="page" id = "all">All</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn nav-link filter-btn" id = "web">Web</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn nav-link filter-btn" id = "uikit">UI Kit</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn nav-link filter-btn" id = "coded">Coded</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <div class="d-flex filter-btns py-2 gap-2">
+            <button class="btn p-0 filter-btn" id="figma"><img src="./img/item1.png" alt=""></button>
+            <button class="btn p-0 filter-btn" id="ruby"><img src="./img/item2.png" alt=""></button>
+            <button class="btn p-0 filter-btn" id="pink"><img src="./img/item3.png" alt=""></button>
+            <button class="btn p-0 filter-btn" id="xd"><img src="./img/item4.png" alt=""></button>
+            <button class="btn p-0 filter-btn" id="ps"><img src="./img/item5.png" alt=""></button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- filter sec end-->
+
+  <!-- cards -->
+  <section class="cards pb-5">
+    <div class="container">
+      <div class="row filter-items">
+
+        <div class="col-md-4 filter-item all web figma">
+          <div class="card border-0 web position-relative">
+            <img src="./img/img1withitem1.png" class="card-img-top" alt="...">
+            <!-- Normalde programların amblemlerini absolute olarak yerleştirdim ama search barda arama yapınca
+            sebebini çözemediğim şekilde fotoğraflar kayıyor bundan dolayı direk figmadan hem fotoğrafın hemde 
+            amblemin çıktısını almaya karar verdim. 
+            <img src="./img/item1.png" class="position-absolute ms-3 mt-3" alt=""> -->
+
+            <div class="d-flex justify-content-between align-items-center pt-2 pb-5">
+              <div>
+                <img src="./img/avatar.png" class="avatar" alt="">
+                <span>by <strong>Ayşe Ekşi</strong> </span>
+              </div>
+              <div>
+                <span class="me-2"><i class="fa-solid fa-code me-1"></i>25</span>
+                <span><i class="fa-solid fa-hands-praying me-1"></i>25</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 filter-item all uikit ruby">
+          <div class="card border-0 all ui-kit">
+            <img src="./img/img2withitem2.png" class="card-img-top" alt="...">
+           <!-- Normalde programların amblemlerini absolute olarak yerleştirdim ama search barda arama yapınca
+            sebebini çözemediğim şekilde fotoğraflar kayıyor bundan dolayı direk figmadan hem fotoğrafın hemde 
+            amblemin çıktısını almaya karar verdim. 
+            <img src="./img/item2.png" class="position-absolute ms-3 mt-3" alt=""> -->
+
+            <div class="d-flex justify-content-between align-items-center pt-2 pb-5">
+              <div>
+                <img src="./img/avatar.png" class="avatar" alt="">
+                <span>by <strong>Burcu Cesur</strong> </span>
+              </div>
+              <div>
+                <span class="me-2"><i class="fa-solid fa-code me-1"></i>25</span>
+                <span><i class="fa-solid fa-hands-praying me-1"></i>25</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 filter-item all coded pink">
+          <div class="card border-0 all coded">
+            <img src="./img/img3withitem3.png" class="card-img-top" alt="...">
+            <!-- Normalde programların amblemlerini absolute olarak yerleştirdim ama search barda arama yapınca
+            sebebini çözemediğim şekilde fotoğraflar kayıyor bundan dolayı direk figmadan hem fotoğrafın hemde 
+            amblemin çıktısını almaya karar verdim. 
+            <img src="./img/item3.png" class="position-absolute ms-3 mt-3" alt=""> -->
+
+            <div class="d-flex justify-content-between align-items-center pt-2 pb-5">
+              <div>
+                <img src="./img/avatar.png" class="avatar" alt="">
+                <span>by <strong>Hacer Sarıhan</strong> </span>
+              </div>
+              <div>
+                <span class="me-2"><i class="fa-solid fa-code me-1"></i>25</span>
+                <span><i class="fa-solid fa-hands-praying me-1"></i>25</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 filter-item all uikit xd">
+          <div class="card border-0 all coded">
+            <img src="./img/img4withitem4.png" class="card-img-top" alt="...">
+            <!-- Normalde programların amblemlerini absolute olarak yerleştirdim ama search barda arama yapınca
+            sebebini çözemediğim şekilde fotoğraflar kayıyor bundan dolayı direk figmadan hem fotoğrafın hemde 
+            amblemin çıktısını almaya karar verdim. 
+            <img src="./img/item4.png" class="position-absolute ms-3 mt-3" alt=""> -->
+
+            <div class="d-flex justify-content-between align-items-center pt-2 pb-5">
+              <div>
+                <img src="./img/avatar.png" class="avatar" alt="">
+                <span>by <strong>Fatme Merve</strong> </span>
+              </div>
+              <div>
+                <span class="me-2"><i class="fa-solid fa-code me-1"></i>25</span>
+                <span><i class="fa-solid fa-hands-praying me-1"></i>25</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 filter-item all coded ps">
+          <div class="card border-0 all coded">
+            <img src="./img/img5withitem5.png" class="card-img-top" alt="...">
+            <!-- Normalde programların amblemlerini absolute olarak yerleştirdim ama search barda arama yapınca
+            sebebini çözemediğim şekilde fotoğraflar kayıyor bundan dolayı direk figmadan hem fotoğrafın hemde 
+            amblemin çıktısını almaya karar verdim. 
+            <img src="./img/item5.png" class="position-absolute ms-3 mt-3" alt=""> -->
+
+            <div class="d-flex justify-content-between align-items-center pt-2 pb-5">
+              <div>
+                <img src="./img/avatar.png" class="avatar" alt="">
+                <span>by <strong>Elif Ağdaş</strong> </span>
+              </div>
+              <div>
+                <span class="me-2"><i class="fa-solid fa-code me-1"></i>25</span>
+                <span><i class="fa-solid fa-hands-praying me-1"></i>25</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 filter-item all web figma">
+          <div class="card border-0 all coded">
+            <img src="./img/img6withitem6.png" class="card-img-top" alt="...">
+            <!-- Normalde programların amblemlerini absolute olarak yerleştirdim ama search barda arama yapınca
+            sebebini çözemediğim şekilde fotoğraflar kayıyor bundan dolayı direk figmadan hem fotoğrafın hemde 
+            amblemin çıktısını almaya karar verdim. 
+            <img src="./img/item1.png" class="position-absolute ms-3 mt-3" alt=""> -->
+
+            <div class="d-flex justify-content-between align-items-center pt-2 pb-5">
+              <div>
+                <img src="./img/avatar.png" class="avatar" alt="">
+                <span>by <strong>Zehra Davut</strong> </span>
+              </div>
+              <div>
+                <span class="me-2"><i class="fa-solid fa-code me-1"></i>25</span>
+                <span><i class="fa-solid fa-hands-praying me-1"></i>25</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- cards end-->
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

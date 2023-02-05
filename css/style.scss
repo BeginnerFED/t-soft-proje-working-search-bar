@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*colors*/
+$main: #202142;
+$active: #F1F1FD;
+$sec: #FCFCFF;
+$white: #FFFFFF;
+$border: #EFEFFF;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar  */
+
+.navbar-nav{
+    font-weight: 500;
+    
+        
+    .active{
+        background-color: $active;
+        border-radius: 20px;
+        opacity: 1;
+    }
+    li a{
+        color: $main !important;
+        opacity: 0.7;
+    }
+  
+}
+.navbar-text{
+    
+    a{
+        text-decoration: none;
+        font-weight: 500;
+        color: $main !important;
+        
+    }
+    .sign-in{
+        background-color: $main;
+        padding: 10px;
+        color: $white !important;
+        border-radius: 10px;
+    }
+    a:hover{
+        opacity: 0.8;
+    }
+    
+}
+/* Navbar end */
+ 
+/* Search sec */
+
+.search{
+    color: $main;
+    h1{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    h6{
+        font-weight: 400;
+        max-width: 550px;
+    }
+    input{
+        border: none;
+        width: 100%;
+        
+    }
+    .search-bar{
+        max-width: 600px;
+        height: 70px;
+        border: 1px solid #EFEFFF;
+        border-radius: 10px;
+        box-shadow: 0px 16px 35px -15px rgba(2, 5, 132, 0.15);
+    }
+    .form-control:focus,.dropdown-toggle{
+        box-shadow: none;
+    }
+    i {
+        font-size: 1rem;
+        color: #333;
+        top: .55rem;
+        left: .55rem;
+        opacity: 0.5;
+    }
+}
+
+/* Switch button */
+.switch-button {
+    background: $active;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 240px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: $main;
+    position: relative;
+    padding-right: 120px;
+    position: relative;
+  
+    &:before {
+      content: "Popular";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      pointer-events: none;
+    }
+  
+    &-checkbox {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 2;
+  
+      &:checked + .switch-button-label:before {
+        transform: translateX(120px);
+        transition: transform 300ms linear;
+      }
+  
+      & + .switch-button-label {
+        position: relative;
+        padding: 15px 0;
+        display: block;
+        user-select: none;
+        pointer-events: none;
+  
+        &:before {
+          content: "";
+          background: $white;
+          height: 85%;
+          width: 90%;
+          position: absolute;
+          left: 3%;
+          top: 7%;
+          border-radius: 30px;
+          transform: translateX(0);
+          transition: transform 300ms;
+          box-shadow: 0px 10px 15px -10px rgba(2, 5, 132, 0.5);
+        }
+  
+        .switch-button-label-span {
+          position: relative;
+        }
+      }
+    }
+  }
+
+/* Switch button end*/
+
+/* filter */
+.filter-sec{
+    .nav-item button{
+        color: $main;
+        opacity: 0.7;
+    }
+    .nav-item .active{
+        border: 1px solid $border;
+        border-radius: 30px;
+        opacity: 1;
+    }
+    
+    
+}
+
+    
+/* filter end */  
+
+/* cards */
+.cards{
+    .card{
+        cursor: pointer;
+    }
+    .card:hover{
+        opacity: 0.8;
+    }
+    .avatar{
+        height: 30px;
+    }
+    span{
+        font-size: 0.8rem;
+    }
+}
+/* cards end*/
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+   /*navbar*/
+    .navbar{
+    .collapse{
+        padding-top: 20px;
+    }
+   }
+   /*navbar end*/
+
+   /* search bar*/
+   /* search bar end*/
+
+
+   /* filter */
+   .filter-sec{
+    .container{
+        .d-flex{
+            justify-content: center;
+        }
+    }
+   }
+   /* filter end*/
+
+   /*cards*/
+   /*cards end*/
+  }
+
+/* mobile end*/
+
+
+
+
+
